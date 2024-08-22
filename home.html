@@ -26,29 +26,5 @@
             font-family: system-ui;
         }
     </style>
-
-    <!-- Add your React script -->
-    <script type="text/javascript">
-        const appDomElement = document.getElementById('app');
-        
-        const h = React.createElement
-
-        // Use ReactDOM.render() instead of createRoot() for React 16
-        const button = h('button', {"data-id": 123}, 'button 1');        
-        const button2 = h('button', {"data-id": 456}, 'button 2');
-        const button3 = h('button', {"data-id": 789}, 'button 3');
-
-        const app = React.createElement(React.Fragment, null, [button, button2, button3]);
-        
-        /*JSX 
-        <React.Fragment>
-            <button data-id="123">button 1</button>
-            <button data-id="456">button 2</button>
-            <button data-id="789">button 3</button>
-        </React.Fragment>
-        */
-
-        ReactDOM.render(app, appDomElement);
-    </script>
 </body>
 </html>
