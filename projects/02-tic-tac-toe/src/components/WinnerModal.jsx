@@ -1,5 +1,12 @@
 import { Square } from './Square'
+import PropTypes from 'prop-types';
+
 export function WinnerModal({winner, resetGame}) {
+
+WinnerModal.propTypes = {
+  winner: PropTypes.bool,
+  resetGame: PropTypes.func.isRequired,
+};
   if (winner === null) return null
 
   const winnerText = winner === false ? 'Empate' : 'Ganador:'
